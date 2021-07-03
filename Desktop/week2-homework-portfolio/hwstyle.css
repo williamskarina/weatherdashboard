@@ -2,8 +2,8 @@
 header {
     padding: 20px;
     font-family: 'Times New Roman';
-    background-color: pink;
-    color: #ffffff;
+    background-color:white;
+    color: pink;
 }
 header h1 {
     display: inline-block;
@@ -26,7 +26,7 @@ header nav ul li {
 }
 
 body {
-    background-color: beige;
+    background-color: darkgray;
   }
 
 header h2 {
@@ -40,7 +40,7 @@ header h2 {
     height: 40vh;
     background-image: url(./Screen\ Shot\ 2021-07-02\ at\ 8.04.53\ AM.jpg);
     background-size: cover;
-    box-shadow: 5px 5px 10px blue;
+    box-shadow: 5px 5px 10px white;
 }
 
 .mywork2 {
@@ -50,7 +50,7 @@ header h2 {
     background-image: url(./laptop-blank-screen-on-table-260nw-340152863.jpeg);
     background-size: cover;
     margin-bottom: 10px;
-    box-shadow: 5px 5px 10px blue;
+    box-shadow: 5px 5px 10px white;
 }
 
 .mywork3 {
@@ -59,43 +59,48 @@ header h2 {
     margin-left: 4%;
     background-image: url(./istockphoto-1058262630-612x612.jpeg);
     background-position: cover;
-    box-shadow: 5px 5px 10px blue;
+    box-shadow: 5px 5px 10px white;
 }
 
 .overlay1 {
     position: absolute;
-    background: blue;
+    background:pink;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 552px;
+    height: 322px;
     z-index: 1;
     opacity: 1;
-    transition: opacity 2s;
+    transition: opacity 1s;
 }
 
 .overlay2 {
     position: absolute;
-    background: pink;
+    background: peachpuff;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 552px;
+    height: 322px;
     z-index: 1;
     opacity: 1;
-    transition: opacity 2s;
+    transition: opacity 1s;
 }
 
 .overlay3 {
     position: absolute;
-    background: yellow;
+    background: lavenderblush;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 552px;
+    height: 322px;
     z-index: 1;
     opacity: 1;
-    transition: opacity 2s;
+    transition: opacity 1s;
 }
 
 
 div[class*='overlay']:hover {
    opacity: 0;
+}
+
+div[class*='mywork'] {
+    width: 550;
+    height: 300;
 }
