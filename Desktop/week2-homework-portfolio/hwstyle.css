@@ -1,7 +1,7 @@
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Times New Roman';
     background-color: pink;
     color: #ffffff;
 }
@@ -13,7 +13,7 @@ header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Times New Roman';
     font-size: 20px;
 }
 header nav ul {
@@ -24,4 +24,78 @@ header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-  
+
+body {
+    background-color: beige;
+  }
+
+header h2 {
+    text-align: right;
+}
+
+.mywork1 {
+    position: relative;
+    width: 32%;
+    margin-left: 16%;
+    height: 40vh;
+    background-image: url(./Screen\ Shot\ 2021-07-02\ at\ 8.04.53\ AM.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 10px blue;
+}
+
+.mywork2 {
+    position: relative;
+    width: 100%;
+    margin-left: 4%;
+    background-image: url(./laptop-blank-screen-on-table-260nw-340152863.jpeg);
+    background-size: cover;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px blue;
+}
+
+.mywork3 {
+    position: relative;
+    width: 100%;
+    margin-left: 4%;
+    background-image: url(./istockphoto-1058262630-612x612.jpeg);
+    background-position: cover;
+    box-shadow: 5px 5px 10px blue;
+}
+
+.overlay1 {
+    position: absolute;
+    background: blue;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.overlay2 {
+    position: absolute;
+    background: pink;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.overlay3 {
+    position: absolute;
+    background: yellow;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+
+div[class*='overlay']:hover {
+   opacity: 0;
+}
