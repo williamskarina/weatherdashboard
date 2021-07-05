@@ -32,75 +32,79 @@ body {
 header h2 {
     text-align: right;
 }
-
-.mywork1 {
-    position: relative;
-    width: 32%;
-    margin-left: 16%;
-    height: 40vh;
-    background-image: url(./Screen\ Shot\ 2021-07-02\ at\ 8.04.53\ AM.jpg);
-    background-size: cover;
-    box-shadow: 5px 5px 10px white;
+.mywork1{
+    background-image: url(../week2-homework-portfolio/Screen\ Shot\ 2021-07-02\ at\ 8.04.53\ AM.jpg);
 }
 
 .mywork2 {
-    position: relative;
-    width: 100%;
-    margin-left: 4%;
-    background-image: url(./laptop-blank-screen-on-table-260nw-340152863.jpeg);
-    background-size: cover;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 10px white;
+    background-image: url(../week2-homework-portfolio/bluecomputer.jpeg);
 }
 
 .mywork3 {
-    position: relative;
-    width: 100%;
-    margin-left: 4%;
-    background-image: url(./istockphoto-1058262630-612x612.jpeg);
-    background-position: cover;
-    box-shadow: 5px 5px 10px white;
+    background-image: url(../week2-homework-portfolio/bluecomputer.jpeg);
 }
-
-.overlay1 {
-    position: absolute;
-    background:pink;
+.mywork1 { 
+    position: relative;
     top: 0px;
     width: 552px;
     height: 322px;
     z-index: 1;
     opacity: 1;
+    transition: opacity 2s;
+}
+ .mywork2 {
+    position: relative;
+    top: 0px;
+    width: 552px;
+    height: 322px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.mywork3 { 
+    position: relative;
+    top: 0px;
+    width: 552px;
+    height: 322px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 2s;
+}  
+.overlay1 {
+    background-color: pink;
+    position: absolute;
+    width: 552px;
+    height: 400px;
     transition: opacity 1s;
 }
 
 .overlay2 {
+    background-color: peachpuff;
     position: absolute;
-    background: peachpuff;
-    top: 0px;
-    width: 552px;
-    height: 322px;
-    z-index: 1;
-    opacity: 1;
     transition: opacity 1s;
 }
 
 .overlay3 {
+    background-color: lavenderblush;
     position: absolute;
-    background: lavenderblush;
-    top: 0px;
-    width: 552px;
-    height: 322px;
-    z-index: 1;
-    opacity: 1;
     transition: opacity 1s;
 }
 
-
 div[class*='overlay']:hover {
    opacity: 0;
+}  
+
+.mywork1 {
+    min-height: 400px;
+    flex-basis: 100%;
 }
 
-div[class*='mywork'] {
-    width: 550;
-    height: 300;
+.mywork2, .mywork3 {
+    min-height:200px;
+    flex-basis: 100%;
+    background-repeat: no-repeat;
+
 }
+
+
+
