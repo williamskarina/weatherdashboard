@@ -1,0 +1,209 @@
+/* 
+*{
+    margin:0;
+    padding:0;
+}
+*/
+
+body {
+    background-color:#f4f4f4;
+    color:#555555;
+
+    font-family: Arial, Helvetica, Arial, Helvetica, sans-serif;
+    font: size 16px;
+    font-weight:normal;
+    /* same as above just shorter way*/
+    font: normal 16px Arial, Helvetica, sans-serif;
+    /* the space in bewteen the lines */
+    line-height: 1.6em;
+    margin:0;
+
+}
+/* this changes the a tag link color */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* when you hover over the a tag then it will display a different color */
+a:hover{
+    color: red;
+}
+a:active{
+    color:green;
+}
+
+/* margin is spacing around an element */
+/* auto sets it */
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+/* makes the button look the way it does */
+.button {
+    background-color: #333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+.button:hover {
+    background-color: red;
+    color:white;
+}
+
+.clr{
+    clear:both;
+}
+.box-1{
+    background-color: #333;
+    color:#fff;
+
+    border-bottom: 5px red solid;
+    border-top: 5px red solid;
+    border-left: 5px red solid;
+    border-right: 5px red solid;
+
+    /* same as above */
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* same as above */
+    padding: 20px;
+
+    margin-top:20px;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border:1px #ccc solid;
+    padding: 10px;
+    /* gives rounded corners */
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: 1px #333 dotted;
+    list-style-image: url('../csscheatsheet/images/check');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width: 100%;
+}
+
+/* box-sizing takes in padding and border and applies it into the width itself so that its not making it too big or too wide */
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+
+#sidebar{
+    float:right;
+    width: 30%;
+    background-color: #333;
+    color:#fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../csscheatsheet/images/bgimage.jpeg');
+    background-repeat: no-repeat;
+    /* this pushes it down 100px and over 200px */
+    background-position: 100px 200px;
+
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position:absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+/* keeps it along the website as you scroll */
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background:blue;
+}
+
+/* gives you the fifth child and can make it yellow */
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
