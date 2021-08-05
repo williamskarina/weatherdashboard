@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <h1>Weather Dashboard</h1>
+      <div id="info" class="container">
+          <div class="row">
+            <div id="content-left" class="col-md-3">
+                <form>
+                    <label for="search">Search for a City:</label>
+                    <div class="search-row">
+                        <input id="search" name="city" placeholder="Houston">
+                        <button id="searchbtn" type="submit">Search</button>
+                    </div>
+                </form>
+                <ul id="cityre" class="list-group mt-4"></ul> 
+                <a id="clear" href="#"></a>
+                <a class= "clear-results" href="#"></a>
+            </div>
+
+            <div id="content-right">
+                <div id="current-weather"></div>
+                <div id="five-day-forecast"></div>
+            </div>
+          </div>
+      </div>
+
+     
+  </body>
+</html>
+<script src="script.js"></script>
