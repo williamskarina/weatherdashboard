@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather Dashboard</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:pink;color: white;">
     <h1>Weather Dashboard</h1>
-      <div id="info" class="container">
-          <div class="row">
-            <div id="content-left" class="col-md-3">
-                <form>
-                    <label for="search">Search for a City:</label>
-                    <div class="search-row">
-                        <input id="search" name="city" placeholder="Houston">
-                        <button id="searchbtn" type="submit">Search</button>
-                    </div>
-                </form>
-                <ul id="cityre" class="list-group mt-4"></ul> 
-                <a id="clear" href="#"></a>
-                <a class= "clear-results" href="#"></a>
-            </div>
+</div>
 
-            <div id="content-right">
-                <div id="current-weather"></div>
-                <div id="five-day-forecast"></div>
-            </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Search for a City:</h3>
+      <form class="input">
+        <input type="text" class="form-control" id= "search">
+        <div class="input-group">
+          <button class="button" id="search" type="submit">Search</button>
+        </div>
+      </form>
+      <ul class="list"></ul>
+    </div>
+    <div class="col-sm-8">
+      <div class="row ml-2 border border-dark rounded">
+          <div class="col-sm-12" id="present-weather">
+              <h3 class="city-name mb-1 mt-2 bolder" id="city"></h3>
+              <p>Temperature:<span class="present" id="temperature"></span></p>
+              <p>Humidity:<span class="present" id="humidity"></span></p> 
+              <p>Wind Speed:<span class="present" id="wind-speed"></span></p>
+              <p>UV index:<span class="present bg-danger py-2 px-2 text-white" id="uv-index"></span></p> 
           </div>
       </div>
-
-      <script src="script.js"></script>
-  </body>
+      <div class="col-sm-10" id ="fweather">
+          <h3>5-Day Forecast:</h3>
+          <div class="row text-light">
+              <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2" >
+                  <p id="Date0"></p>
+                  <p id="Img0"></p>
+                  <p>Temp:<span id="Temp0"></span></p>
+                  <p>Humidity:<span id="Humidity0"></span></p>
+                  <p>Wind:<span id="Wind4"></span></p>
+              </div>
+              <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2" >
+                  <p id="Date1"></p>
+                  <p id="Img1"></p>
+                  <p>Temp:<span id="Temp1"></span></p>
+                  <p>Humidity:<span id="Humidity1"></span></p>
+                  <p>Wind:<span id="Wind1"></span></p>
+              </div>
+              <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
+                  <p id="Date2"></p>
+                  <p id="Img2"></p>
+                  <p>Temp:<span id="Temp2"></span></p>
+                  <p>Humidity:<span id="Humidity2"></span></p>
+                  <p>Wind:<span id="Wind2"></span></p>
+              </div>
+              <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
+                  <p id="Date3"></p>
+                  <p id="Img3"></p>
+                  <p>Temp:<span id="Temp3"></span></p>
+                  <p>Humidity:<span id="Humidity3"></span></p>
+                  <p>Wind:<span id="Wind3"></span></p>
+              </div>
+              <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
+                  <p id="Date4"></p>
+                  <p id="Img4"></p>
+                  <p>Temp:<span id="Temp4"></span></p>
+                  <p>Humidity:<span id="Humidity4"></span></p>
+                  <p>Wind:<span id="Wind4"></span></p>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
-
